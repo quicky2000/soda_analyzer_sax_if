@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace osm_diff_analyzer_if
+namespace osm_diff_analyzer_sax_if
 {
   class sax_analyzer_if
   {

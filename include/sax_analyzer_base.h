@@ -4,9 +4,9 @@
 #include "analyzer_base.h"
 #include "sax_analyzer_if.h"
 
-namespace osm_diff_analyzer_if
+namespace osm_diff_analyzer_sax_if
 {
-  class sax_analyzer_base: public analyzer_base,public sax_analyzer_if
+  class sax_analyzer_base: public osm_diff_analyzer_if::analyzer_base,public sax_analyzer_if
   {
   public:
     inline sax_analyzer_base(const std::string & p_type,
@@ -19,7 +19,7 @@ namespace osm_diff_analyzer_if
   sax_analyzer_base::sax_analyzer_base(const std::string & p_type,
 				       const std::string & p_name,
 				       const std::string & p_output_type):
-    analyzer_base(p_type,p_name,"sax",p_output_type)
+    osm_diff_analyzer_if::analyzer_base(p_type,p_name,"sax",p_output_type)
     {
     }
 
