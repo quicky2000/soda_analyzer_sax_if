@@ -6,13 +6,13 @@
 
 namespace osm_diff_analyzer_sax_if
 {
-  class sax_analyzer_base: public osm_diff_analyzer_if::analyzer_base,public sax_analyzer_if
+  class sax_analyzer_base: public osm_diff_analyzer_if::analyzer_base, public sax_analyzer_if
   {
   public:
     inline sax_analyzer_base(const std::string & p_type,
 			     const std::string & p_name,
 			     const std::string & p_output_type);
-
+    inline const std::string & get_name(void)const;
   private:
   };
   //----------------------------------------------------------------------------
@@ -22,7 +22,11 @@ namespace osm_diff_analyzer_sax_if
     osm_diff_analyzer_if::analyzer_base(p_type,p_name,"sax",p_output_type)
     {
     }
-
+    //----------------------------------------------------------------------------
+    const std::string & sax_analyzer_base::get_name(void)const
+      {
+        return osm_diff_analyzer_if::analyzer_base::get_name();
+      }
 }
 #endif // _SAX_ANALYZER_BASE_H_
 //EOF
