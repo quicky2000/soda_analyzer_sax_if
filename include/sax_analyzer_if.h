@@ -1,12 +1,12 @@
 #ifndef _SAX_ANALYZER_IF_H_
 #define _SAX_ANALYZER_IF_H_
 
-#include "general_analyzer_if.h"
+#include "diff_analyzer_if.h"
 #include <string>
 
 namespace osm_diff_analyzer_sax_if
 {
-  class sax_analyzer_if: public osm_diff_analyzer_if::general_analyzer_if
+  class sax_analyzer_if: public osm_diff_analyzer_if::diff_analyzer_if
   {
   public:
     virtual void start_element(const std::string & p_name)=0;
