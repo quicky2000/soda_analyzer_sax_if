@@ -1,5 +1,5 @@
 /*
-    This file is part of osm_diff_analyzer_dom_if, Interface definitions 
+    This file is part of osm_diff_analyzer_sax_if, Interface definitions 
     of SAX based Openstreetmap diff analyzers
     Copyright (C) 2012  Julien Thevenon ( julien_thevenon at yahoo.fr )
 
